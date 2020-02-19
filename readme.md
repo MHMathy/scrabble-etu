@@ -109,7 +109,7 @@ associés.
 Le Gaddag simplifié est une structure de données pour encoder le dictionnaire,
 et déterminer rapidement si des mots sont dedans ou non. Nous simplifions ici
 cette structure de données pour faciliter son implémentation, en retirant la
-minimisation du nombre de nœuds. Votre Gaddag sera dont plus simplement un
+minimisation du nombre de nœuds. Votre Gaddag sera donc plus simplement un
 arbre.
 
 ### Arbre dictionnaire
