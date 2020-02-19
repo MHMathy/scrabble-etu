@@ -129,7 +129,7 @@ vérifier :
 * le mot est dans le dictionnaire si et seulement si le nœud sur lequel le
   parcours a abouti est terminal.
 
-Par exemple, sur l'arbre suivant, sur lequel les nœuds terminaux xont colorés en
+Par exemple, sur l'arbre suivant, sur lequel les nœuds terminaux sont colorés en
 noir :
 
 ![exemple arbre](data/exemple_arbre.png)
