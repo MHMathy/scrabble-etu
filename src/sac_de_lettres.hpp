@@ -1,5 +1,5 @@
 #pragma once
-
+#include <vector>
 struct sac_de_lettres{
-    vector<char> sac_lettre;
-}
+    std::vector<char> sac_lettre;
+};

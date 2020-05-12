@@ -36,6 +36,9 @@ common_files = {
   "src/board.hpp", "src/board.cpp",
   "src/spot.hpp", "src/spot.cpp",
   "src/bonus.hpp", "src/bonus.cpp",
+  "src/arrete.hpp", "src/arrete.cpp",
+  "src/noeud.hpp", "src/noeud.cpp",
+  "src/dictionnaire.hpp", "src/dictionnaire.cpp"
 }
 
 -- Pour chaque exécutable que vous souhaitez générer, ajoutez un nouveau projet

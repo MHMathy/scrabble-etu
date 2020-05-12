@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1582121111 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/board.cpp
+	"board.hpp"
+	<fstream>
+
+1582121111 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/board.hpp
+	"spot.hpp"
+	<iostream>
+
+1582121111 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/spot.hpp
+	"bonus.hpp"
+	<iostream>
+
+1582121111 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/bonus.hpp
+
+1582121111 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/bonus.cpp
+	"bonus.hpp"
+
+1582121111 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/spot.cpp
+	"spot.hpp"
+
+1589289307 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/test_board.cpp
+	"board.hpp"
+	"gaddag.hpp"
+	<iostream>
+	<sstream>
+
+1582655177 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/arrete.cpp
+	"arrete.hpp"
+
+1582654443 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/arrete.hpp
+
+1582654160 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/noeud.cpp
+	"noeud.hpp"
+
+1582654140 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/noeud.hpp
+	<vector>
+
+1589289351 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/dictionnaire.cpp
+	"dictionnaire.hpp"
+	"arrete.hpp"
+	<iostream>
+	<fstream>
+
+1582655227 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/dictionnaire.h
+	"../noeud.hpp"
+	<string>
+
+1589285403 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/arrete.cpp
+	"arrete.hpp"
+	"noeud.hpp"
+
+1589130233 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/arrete.hpp
+
+1589286966 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/dictionnaire.hpp
+	"noeud.hpp"
+	<string>
+
+1589130316 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/noeud.hpp
+	<vector>
+	"arrete.hpp"
+
+1582817138 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/joueur.cpp
+
+1582124664 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre.cpp
+
+1582126263 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.cpp
+
+1589285467 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/noeud.cpp
+	"noeud.hpp"
+
+1582125555 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.cpp
+	"sac_de_lettres.hpp"
+
+1582817541 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.hpp
+	<vector>
+
+1582824428 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/noeud.cpp
+	"noeud.hpp"
+
+1588898695 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/dijkstra.cpp
+	"dijkstra.hpp"
+
+1588898685 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/dijkstra.hpp
+	"dictionnaire.hpp"
+
+1588880880 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.cpp
+	"scrabble.hpp"
+
+1588944085 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.hpp
+
+1589305947 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/gaddag.cpp
+	"gaddag.hpp"
+	"board.hpp"
+
+1589304776 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/gaddag.hpp
+	"dictionnaire.hpp"
+	"board.hpp"
+

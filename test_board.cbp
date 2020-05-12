@@ -18,7 +18,6 @@
 					<Add option="-std=c++11" />
 					<Add option="-W -Wall -Wextra" />
 					<Add option="-pipe" />
-					<Add option="-g" />
 				</Compiler>
 				<Linker>
 					<Add option="-g" />
@@ -41,21 +40,32 @@
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="src/board.hpp">
-		</Unit>
-		<Unit filename="src/board.cpp">
-		</Unit>
-		<Unit filename="src/spot.hpp">
-		</Unit>
-		<Unit filename="src/spot.cpp">
-		</Unit>
-		<Unit filename="src/bonus.hpp">
-		</Unit>
-		<Unit filename="src/bonus.cpp">
-		</Unit>
-		<Unit filename="src/test_board.cpp">
-		</Unit>
-		<Extensions />
+		<Unit filename="src/arrete.cpp" />
+		<Unit filename="src/arrete.hpp" />
+		<Unit filename="src/board.cpp" />
+		<Unit filename="src/board.hpp" />
+		<Unit filename="src/bonus.cpp" />
+		<Unit filename="src/bonus.hpp" />
+		<Unit filename="src/dictionnaire.cpp" />
+		<Unit filename="src/dictionnaire.hpp" />
+		<Unit filename="src/gaddag.cpp" />
+		<Unit filename="src/gaddag.hpp" />
+		<Unit filename="src/joueur.cpp" />
+		<Unit filename="src/lettre.cpp" />
+		<Unit filename="src/lettre_joueurs.cpp" />
+		<Unit filename="src/lettre_joueurs.hpp" />
+		<Unit filename="src/noeud.cpp" />
+		<Unit filename="src/noeud.hpp" />
+		<Unit filename="src/sac_de_lettres.cpp" />
+		<Unit filename="src/sac_de_lettres.hpp" />
+		<Unit filename="src/scrabble.cpp" />
+		<Unit filename="src/scrabble.hpp" />
+		<Unit filename="src/spot.cpp" />
+		<Unit filename="src/spot.hpp" />
+		<Unit filename="src/test_board.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
-
