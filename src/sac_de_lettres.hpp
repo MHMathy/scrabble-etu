@@ -1,5 +1,9 @@
 #pragma once
 #include <vector>
+<<<<<<< HEAD
+struct sac_de_lettres{
+    std::vector<char> sac_lettre;
+=======
 
 /*
 struct sac_de_lettres{
@@ -18,4 +22,5 @@ struct sac_de_lettres{
 
 	sac_de_lettres(int nb_lettres); //constructeur, initialise la sac de lettres 
 	~sac_de_lettres(); //destructeur, détruit le sac de lettres
+>>>>>>> 3353b7d538c11464175c64063b3cb770549a4c3b
 };
