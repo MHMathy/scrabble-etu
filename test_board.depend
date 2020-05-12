@@ -64,15 +64,20 @@
 
 1582124664 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre.cpp
 
-1582126263 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.cpp
+1589310272 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.cpp
+	"sac_de_lettres.hpp"
 
 1589285467 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/noeud.cpp
 	"noeud.hpp"
 
-1582125555 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.cpp
+1589310359 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.cpp
 	"sac_de_lettres.hpp"
+	"lettres_joueur.hpp"
+	"Cellule_lettre.hpp"
+	<random>
+	<vector>
 
-1582817541 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.hpp
+1589310253 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.hpp
 	<vector>
 
 1582824428 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/noeud.cpp
@@ -89,7 +94,7 @@
 
 1588944085 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.hpp
 
-1589305947 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/gaddag.cpp
+1589307396 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/gaddag.cpp
 	"gaddag.hpp"
 	"board.hpp"
 

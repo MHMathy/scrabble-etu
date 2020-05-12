@@ -22,8 +22,9 @@ void Gaddag::gaddag_calcul(){
             Case_lettre case_actu = {i,plateau.spots[i].letter};
             mot_actu=case_actu.lettre;
             ntemp = dico->Getracine_arbre()->get_arrete_lettre(case_actu.lettre)->fin;
+            lettre_main = lettre_joueur;
 
-            std::cout<<std::endl<<"Lettre: "<<case_actu.lettre<<std::endl;
+            std::cout<<std::endl<<"Letr: "<<case_actu.lettre<<std::endl;
                 for(int i=0;i<ntemp->arr_fils.size();i++){
                     std::cout<<ntemp->arr_fils[i]->lettre<<" ";
                 }
@@ -63,7 +64,7 @@ void Gaddag::gaddag_calcul(){
 
                 if(pos_lettre>=0 || ntemp->arr_pere->lettre=='+'){
                 //if(pos_lettre>=0){
-                    std::cout<<" step 1";
+                    std::cout<<" s1";
                     mot_actu+= ntemp->arr_pere->lettre;
                     if(ntemp->arr_pere->lettre!='+')lettre_main.erase(pos_lettre,1);
 
@@ -79,7 +80,7 @@ void Gaddag::gaddag_calcul(){
                     }*/
                 }
 
-                std::cout<<" step 2(";
+                std::cout<<" s2(";
                 std::cout<<"actu "<<mot_actu<<" main "<<lettre_main;
                 if(var+1<ntemp->arr_pere->debut->arr_fils.size()){
                     arbre_pos.push_back(var+1);
@@ -98,7 +99,7 @@ void Gaddag::gaddag_calcul(){
                 else arbre_pos.push_back(-2);
 
 
-                std::cout<<") step 3( ";
+                std::cout<<") s3( ";
                 /*
                 for (auto const& i: arbre_pos) {
                     std::cout << i << " ";
@@ -108,7 +109,7 @@ void Gaddag::gaddag_calcul(){
                 for(int i=0;i<ntemp->arr_fils.size();i++){
                     std::cout<<ntemp->arr_fils[i]->lettre<<" ";
                 }
-                std::cout<<")"<<std::endl<<std::endl;
+                std::cout<<")"<<std::endl;
 
 
             } while(!arbre_pos.empty());
@@ -117,7 +118,8 @@ void Gaddag::gaddag_calcul(){
                     std::cout<<case_actu.list_possible[i].mot<<std::endl;
                 }
             case_plateau.push_back(case_actu);
-            std::string osef;std::cin>>osef;
+
+            //std::string osef;std::cin>>osef;
         }
     }
 
