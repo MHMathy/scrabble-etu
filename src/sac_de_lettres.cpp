@@ -6,35 +6,6 @@
 using namespace std;
 
 sac_de_lettres::sac_de_lettres(int nb_lettres){
-	/*int nb_lettres = 102;
-	tableau_lettres[0] = 9; //A
-	tableau_lettres[1] = 2; //B
-	tableau_lettres[2] = 2; //C
-	tableau_lettres[3] = 3; //D
-	tableau_lettres[4] = 15; //E
-	tableau_lettres[5] = 2; //F
-	tableau_lettres[6] = 2; //G
-	tableau_lettres[7] = 2; //H
-	tableau_lettres[8] = 8; //I
-	tableau_lettres[9] = 1; //J
-	tableau_lettres[10] = 1; //K
-	tableau_lettres[11] = 5; //L
-	tableau_lettres[12] = 3; //M
-	tableau_lettres[13] = 6; //N
-	tableau_lettres[14] = 6; //O
-	tableau_lettres[15] = 2; //P
-	tableau_lettres[16] = 3; //Q
-	tableau_lettres[17] = 6; //R
-	tableau_lettres[18] = 6; //S
-	tableau_lettres[19] = 6; //T
-	tableau_lettres[20] = 6; //U
-	tableau_lettres[21] = 2; //V
-	tableau_lettres[22] = 1; //W
-	tableau_lettres[23] = 1; //X
-	tableau_lettres[24] = 1; //Y
-	tableau_lettres[25] = 1; //Z
-*/
-
 	tableau_lettres.resize(26);
 	tableau_lettres[0] = Cellule_lettre('A', 9, 3); //A
 	tableau_lettres[1] = Cellule_lettre('B', 2, 3); //B
@@ -64,34 +35,6 @@ sac_de_lettres::sac_de_lettres(int nb_lettres){
 	tableau_lettres[25] = Cellule_lettre('Z', 1, 10); //Z
 }
 
-/*
-tableau_lettres["A"] = 9;
-		tableau_lettres["B"] = 2;
-		tableau_lettres["C"] = 2; 
-		tableau_lettres["D"] = 3;
-		tableau_lettres["E"] = 15;
-		tableau_lettres["F"] = 2;
-		tableau_lettres["G"] = 2;
-		tableau_lettres["H"] = 2;
-		tableau_lettres["I"] = 8;
-		tableau_lettres["J"] = 1;
-		tableau_lettres["K"] = 1;
-		tableau_lettres["L"] = 5;
-		tableau_lettres["M"] = 3;
-		tableau_lettres["N"] = 6;
-		tableau_lettres["O"] = 6;
-		tableau_lettres["P"] = 2;
-		tableau_lettres["Q"] = 3;
-		tableau_lettres["R"] = 6;
-		tableau_lettres["S"] = 6;
-		tableau_lettres["T"] = 6;
-		tableau_lettres["U"] = 6;
-		tableau_lettres["V"] = 2;
-		tableau_lettres["W"] = 1;
-		tableau_lettres["X"] = 1;
-		tableau_lettres["Y"] = 1;
-		tableau_lettres["Z"] = 1;
-*/
 
 sac_de_lettres::~sac_de_lettres(){
 	delete tableau_lettres;
@@ -121,32 +64,4 @@ int sac_de_lettres::piocher_lettre(){
 
 void sac_de_lettres::points_lettres(i){ //i représente une lettre entre A et Z
 	return tableau_lettres[i];
-	/*
-	tableau_lettres[0] = 1; //A
-	tableau_lettres[1] = 3; //B
-	tableau_lettres[2] = 3; //C
-	tableau_lettres[3] = 2; //D
-	tableau_lettres[4] = 1; //E
-	tableau_lettres[5] = 4; //F
-	tableau_lettres[6] = 2; //G
-	tableau_lettres[7] = 4; //H
-	tableau_lettres[8] = 1; //I
-	tableau_lettres[9] = 8; //J
-	tableau_lettres[10] = 10; //K
-	tableau_lettres[11] = 1; //L
-	tableau_lettres[12] = 2; //M
-	tableau_lettres[13] = 1; //N
-	tableau_lettres[14] = 1; //O
-	tableau_lettres[15] = 3; //P
-	tableau_lettres[16] = 2; //Q
-	tableau_lettres[17] = 1; //R
-	tableau_lettres[18] = 1; //S
-	tableau_lettres[19] = 1; //T
-	tableau_lettres[20] = 1; //U
-	tableau_lettres[21] = 4; //V
-	tableau_lettres[22] = 10; //W
-	tableau_lettres[23] = 10; //X
-	tableau_lettres[24] = 10; //Y
-	tableau_lettres[25] = 10; //Z
-	*/
 }
