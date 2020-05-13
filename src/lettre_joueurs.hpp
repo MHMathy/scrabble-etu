@@ -5,13 +5,10 @@
 using namespace std;
 
 struct lettres_joueur {
+	int nb_lettres_joueur; //le nombre de lettre du joueur, il doit être égal à 7 après avoir pioché
+	string str_lettres_joueur; //string qui montre les lettres du joueur
 
-	int nb_lettres_joueur;
-	string str_lettres_joueur;
-
-
-
-	void recharger();
+	void recharger(); //permet au joueur de piocher pour arriver à 7 lettres dans la main
 
 	lettres_joueur();
 	~lettres_joueur();

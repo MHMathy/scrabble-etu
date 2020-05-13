@@ -7,7 +7,7 @@
 using namespace std;
 
 int sac_de_lettres::nb_lettres_total;
-std::vector<Cellule_lettre> sac_de_lettres::tableau_lettres;
+std::vector<Cellule_lettre> sac_de_lettres::tableau_lettres; 
 
 void sac_de_lettres::init(){
     std::cout<<"HERE 3";
@@ -42,7 +42,6 @@ void sac_de_lettres::init(){
 
 
 string sac_de_lettres::piocher_lettre(int nb){
-	//cout<<"La probabilité de piocher une lettre est proportionnelle au nbrd'exemplaires restant dans le sac : "<<nb_lettres<<end;
 	string retour;
 	srand(time(NULL));
     int n,p,v;
@@ -69,35 +68,8 @@ string sac_de_lettres::piocher_lettre(int nb){
 }
 
 int sac_de_lettres::points_lettres(char i){ //i représente une lettre entre A et Z
-    for(auto l : tableau_lettres){
-        if(l.lettre==i)return l.points;
+    for(auto l : tableau_lettres)
+    {
+        if(l.lettre==i)return l.points; //retourne le nombre de points que vaut i une lettre entre A et Z
     }
-	/*
-	tableau_lettres[0] = 1; //A
-	tableau_lettres[1] = 3; //B
-	tableau_lettres[2] = 3; //C
-	tableau_lettres[3] = 2; //D
-	tableau_lettres[4] = 1; //E
-	tableau_lettres[5] = 4; //F
-	tableau_lettres[6] = 2; //G
-	tableau_lettres[7] = 4; //H
-	tableau_lettres[8] = 1; //I
-	tableau_lettres[9] = 8; //J
-	tableau_lettres[10] = 10; //K
-	tableau_lettres[11] = 1; //L
-	tableau_lettres[12] = 2; //M
-	tableau_lettres[13] = 1; //N
-	tableau_lettres[14] = 1; //O
-	tableau_lettres[15] = 3; //P
-	tableau_lettres[16] = 2; //Q
-	tableau_lettres[17] = 1; //R
-	tableau_lettres[18] = 1; //S
-	tableau_lettres[19] = 1; //T
-	tableau_lettres[20] = 1; //U
-	tableau_lettres[21] = 4; //V
-	tableau_lettres[22] = 10; //W
-	tableau_lettres[23] = 10; //X
-	tableau_lettres[24] = 10; //Y
-	tableau_lettres[25] = 10; //Z
-	*/
 }

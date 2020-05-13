@@ -11,16 +11,16 @@ class scrabble
 {
 public:
     struct Joueur{
-        int num_joueur;
-        int score;
-        lettres_joueur lettre_main;
-        Joueur();
-        Joueur(int n);
+        int num_joueur; //numero du joueur
+        int score; //score du joueur
+        lettres_joueur lettre_main; //lettre de la main du joueur
+        Joueur(); //constructeur
+        Joueur(int n); //constructeur avec n égal au numero du joueur
         ~Joueur();
     };
 
-    Joueur j1,j2;
-    Dictionnaire dico;
+    Joueur j1,j2; //initialisation de 2 joueurs 
+    Dictionnaire dico; 
     Board b;
     void init();
     scrabble();
