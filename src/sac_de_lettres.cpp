@@ -54,13 +54,14 @@ string sac_de_lettres::piocher_lettre(int nb){
         n = rand()%nb_lettres_total;
         for(int k=0;i<n;i++){
             v+=1;
-            std::cout<<"Nbl "<<tableau_lettres[p].nb_lettre<<std::endl;
+
             if(v==tableau_lettres[p].nb_lettre){
                 v=0;
                 p+=1;
             }
         }
         retour += tableau_lettres[p].lettre;
+        std::cout<<"Nbl "<<tableau_lettres[p].nb_lettre<<std::endl;
         tableau_lettres[p].nb_lettre--;
 
     }
