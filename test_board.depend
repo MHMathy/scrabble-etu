@@ -19,11 +19,8 @@
 1582121111 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/spot.cpp
 	"spot.hpp"
 
-1589332357 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/test_board.cpp
-	"board.hpp"
-	"gaddag.hpp"
-	<iostream>
-	<sstream>
+1589377229 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/test_board.cpp
+	"scrabble.hpp"
 
 1582655177 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/arrete.cpp
 	"arrete.hpp"
@@ -64,21 +61,22 @@
 
 1582124664 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre.cpp
 
-1589348612 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.cpp
+1589377526 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.cpp
 	"lettre_joueurs.hpp"
 	"sac_de_lettres.hpp"
-	<iostream>
 
 1589338855 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/noeud.cpp
 	"noeud.hpp"
 
-1589353418 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.cpp
+1589378138 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.cpp
 	"sac_de_lettres.hpp"
+	"lettre_joueurs.hpp"
+	"Cellule_lettre.hpp"
 	<random>
 	<vector>
 	<iostream>
 
-1589353105 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.hpp
+1589376804 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/sac_de_lettres.hpp
 	"Cellule_lettre.hpp"
 	<string>
 	<vector>
@@ -92,10 +90,16 @@
 1588898685 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/dijkstra.hpp
 	"dictionnaire.hpp"
 
-1588880880 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.cpp
+1589377574 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.cpp
 	"scrabble.hpp"
+	"sac_de_lettres.hpp"
 
-1588944085 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.hpp
+1589377341 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/scrabble.hpp
+	"lettre_joueurs.hpp"
+	"board.hpp"
+	"gaddag.hpp"
+	<iostream>
+	<sstream>
 
 1589345711 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/gaddag.cpp
 	"gaddag.hpp"
@@ -105,13 +109,13 @@
 	"dictionnaire.hpp"
 	"board.hpp"
 
-1589346348 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.hpp
+1589371399 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/lettre_joueurs.hpp
 	<string>
 
-1589352497 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/Cellule_lettre.cpp
+1589377886 source:/home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/Cellule_lettre.cpp
 	"Cellule_lettre.hpp"
 	<vector>
 
-1589352915 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/Cellule_lettre.hpp
+1589358784 /home/michel/Documents/Cours/LiFAP6/scrabble-etu/src/Cellule_lettre.hpp
 	<vector>
 

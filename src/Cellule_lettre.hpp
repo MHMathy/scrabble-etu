@@ -1,3 +1,6 @@
+#ifndef CELLULE_LETTRE_H
+#define CELLULE_LETTRE_H
+
 #include <vector>
 using namespace std;
 
@@ -11,3 +14,5 @@ struct Cellule_lettre {
 	Cellule_lettre(char,int, int); //constructeur avec paramètres
 	~Cellule_lettre(); //destructeur
 };
+
+#endif // CELLULE_LETTRE_H

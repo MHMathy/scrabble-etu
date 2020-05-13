@@ -4,7 +4,7 @@
 #include <vector>
 
 struct sac_de_lettres{
-	 static int nb_lettres;
+	 static int nb_lettres_total;
 	 static std::vector<Cellule_lettre> tableau_lettres;
 	/*char alphabet[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
 					'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
@@ -14,7 +14,7 @@ struct sac_de_lettres{
 	//const char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	//unsigned char tableau_lettres(26);
 
-	static void init(int nb_lettres); //constructeur, initialise la sac de lettres
+	static void init(); //constructeur, initialise la sac de lettres
 
 
 	static string piocher_lettre(int nb);
