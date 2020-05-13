@@ -20,27 +20,12 @@ class Noeud{
         Noeud();
         Noeud(Arrete* arr_p, bool term);
         ~Noeud();
-        /*
-        // retourne le booleen terminal
-        bool Getterminal();
-
-        // retourne l'adresse de l'arrete père
-        Arrete* Getarr_pere();
-
-        // retourne la liste d'arrete filss
-        std::vector Getarr_fils_list();
-
-        // retourne l'adresse de l'arrete à la position i
-        Arrete* Getarr_fils_pos(int i);
-
-        // ajoute val à la liste des fils
-        void Setarr_fils(Arrete* val);
-
-        */
 
         // retourne l'adresse de l'arrete ayant pour lettre c
         Arrete* get_arrete_lettre(char c);
 
+        // retourne la position de l'arrete ayant pour lettre c
+        int get_pos_arrete_lettre(char c);
 
 
         // retourne la valeur d'une lettre

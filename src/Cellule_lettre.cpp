@@ -3,8 +3,10 @@
 using namespace std;
 
 Cellule_lettre::Cellule_lettre() {
-	for (int i = 0; i <= 26; i++)
-	{
-		tableau_lettres[i];
-	}
+
 }
+
+Cellule_lettre::Cellule_lettre(char,int, int){
+}
+
+Cellule_lettre::~Cellule_lettre(){}

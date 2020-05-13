@@ -67,7 +67,8 @@ int main() {
     std::cout <<"lettre:"<< b.spots[128] << std::endl ;
     Gaddag::dico = &dico;
     Gaddag::maj_info(b,main);
-    Gaddag::gaddag_calcul();
-    delete &dico;
+    b = Gaddag::jouer_meilleur();
+    std::cout << b << std::endl ;
+    //delete &dico;
     return 0;
   }

@@ -40,6 +40,9 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="src/Cellule_lettre.cpp" />
+		<Unit filename="src/Cellule_lettre.hpp" />
+		<Unit filename="src/Joueur.hpp" />
 		<Unit filename="src/arrete.cpp" />
 		<Unit filename="src/arrete.hpp" />
 		<Unit filename="src/board.cpp" />

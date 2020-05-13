@@ -28,6 +28,14 @@ Arrete* Noeud::get_arrete_lettre(char c){
     return adr;
 }
 
+int Noeud::get_pos_arrete_lettre(char c){
+    int pos = -1;
+    for(int i= 0; i<arr_fils.size() ; i++){
+        if(arr_fils[i]->lettre==c) return i; // on identifie a quelle position est le fils
+    }
+}
+
+
 //void Noeud::Setarr_fils(Arrete* val) { arr_fils.push_back(val); }
 
 

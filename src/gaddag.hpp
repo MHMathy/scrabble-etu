@@ -20,9 +20,14 @@ class Gaddag
 
         // struct regroupant les mots possible par case du plateau
         struct Case_lettre{
-            int num;
+            int num_case;
+            int max_point;
             char lettre;
             std::vector<Possible> list_possible;
+
+            int set_max_point();
+            void tri_mot_possible();
+
         };
 
         // variable
@@ -40,7 +45,11 @@ class Gaddag
         static void maj_info(Board b, std::string lettre_main);
 
         // parcours le plateau et le dictionnaire pour obtenir le meilleur mot
-        static void gaddag_calcul();
+        static Case_lettre calcul();
+
+        static Board jouer_meilleur();
+
+        static Case_lettre meilleur_choix(std::vector<Case_lettre> c_plateau);
 
 
 

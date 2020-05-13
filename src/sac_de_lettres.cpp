@@ -1,126 +1,68 @@
 #include "sac_de_lettres.hpp"
-#include "lettres_joueur.hpp"
-#include "Cellule_lettre.hpp"
 #include <random>
 #include <vector>
+#include <iostream>
 using namespace std;
 
-sac_de_lettres::sac_de_lettres(int nb_lettres){
-	/*int nb_lettres = 102;
-	tableau_lettres[0] = 9; //A
-	tableau_lettres[1] = 2; //B
-	tableau_lettres[2] = 2; //C
-	tableau_lettres[3] = 3; //D
-	tableau_lettres[4] = 15; //E
-	tableau_lettres[5] = 2; //F
-	tableau_lettres[6] = 2; //G
-	tableau_lettres[7] = 2; //H
-	tableau_lettres[8] = 8; //I
-	tableau_lettres[9] = 1; //J
-	tableau_lettres[10] = 1; //K
-	tableau_lettres[11] = 5; //L
-	tableau_lettres[12] = 3; //M
-	tableau_lettres[13] = 6; //N
-	tableau_lettres[14] = 6; //O
-	tableau_lettres[15] = 2; //P
-	tableau_lettres[16] = 3; //Q
-	tableau_lettres[17] = 6; //R
-	tableau_lettres[18] = 6; //S
-	tableau_lettres[19] = 6; //T
-	tableau_lettres[20] = 6; //U
-	tableau_lettres[21] = 2; //V
-	tableau_lettres[22] = 1; //W
-	tableau_lettres[23] = 1; //X
-	tableau_lettres[24] = 1; //Y
-	tableau_lettres[25] = 1; //Z
-*/
+void sac_de_lettres::init(int nb_lettres=102){
 
-	tableau_lettres.resize(26);
-	tableau_lettres[0] = Cellule_lettre('A', 9, 3); //A
-	tableau_lettres[1] = Cellule_lettre('B', 2, 3); //B
-	tableau_lettres[2] = Cellule_lettre('C',2, 3); //C
-	tableau_lettres[3] = Cellule_lettre('D',3, 2); //D
-	tableau_lettres[4] = Cellule_lettre('E', 15, 1); //E
-	tableau_lettres[5] = Cellule_lettre('F', 2, 4); //F
-	tableau_lettres[6] = Cellule_lettre('G', 2, 2); //G
-	tableau_lettres[7] = Cellule_lettre('H', 2, 4); //H
-	tableau_lettres[8] = Cellule_lettre('I', 8, 1); //I
-	tableau_lettres[9] = Cellule_lettre('J', 1, 8); //J
-	tableau_lettres[10] = Cellule_lettre('K', 1, 10); //K
-	tableau_lettres[11] = Cellule_lettre('L', 5, 1); //L
-	tableau_lettres[12] = Cellule_lettre('M', 3, 2); //M
-	tableau_lettres[13] = Cellule_lettre('N', 6, 1); //N
-	tableau_lettres[14] = Cellule_lettre('O', 6, 1); //O
-	tableau_lettres[15] = Cellule_lettre('P', 2, 3); //P
-	tableau_lettres[16] = Cellule_lettre('Q', 3, 8); //Q
-	tableau_lettres[17] = Cellule_lettre('R', 6, 1); //R
-	tableau_lettres[18] = Cellule_lettre('S', 6, 1); //S
-	tableau_lettres[19] = Cellule_lettre('T', 6, 1); //T
-	tableau_lettres[20] = Cellule_lettre('U', 6, 1); //U
-	tableau_lettres[21] = Cellule_lettre('V', 2, 4); //V
-	tableau_lettres[22] = Cellule_lettre('W', 1, 10); //W
-	tableau_lettres[23] = Cellule_lettre('X', 1, 10); //X
-	tableau_lettres[24] = Cellule_lettre('Y', 1, 10); //Y
-	tableau_lettres[25] = Cellule_lettre('Z', 1, 10); //Z
-}
-
-/*
-tableau_lettres["A"] = 9;
-		tableau_lettres["B"] = 2;
-		tableau_lettres["C"] = 2; 
-		tableau_lettres["D"] = 3;
-		tableau_lettres["E"] = 15;
-		tableau_lettres["F"] = 2;
-		tableau_lettres["G"] = 2;
-		tableau_lettres["H"] = 2;
-		tableau_lettres["I"] = 8;
-		tableau_lettres["J"] = 1;
-		tableau_lettres["K"] = 1;
-		tableau_lettres["L"] = 5;
-		tableau_lettres["M"] = 3;
-		tableau_lettres["N"] = 6;
-		tableau_lettres["O"] = 6;
-		tableau_lettres["P"] = 2;
-		tableau_lettres["Q"] = 3;
-		tableau_lettres["R"] = 6;
-		tableau_lettres["S"] = 6;
-		tableau_lettres["T"] = 6;
-		tableau_lettres["U"] = 6;
-		tableau_lettres["V"] = 2;
-		tableau_lettres["W"] = 1;
-		tableau_lettres["X"] = 1;
-		tableau_lettres["Y"] = 1;
-		tableau_lettres["Z"] = 1;
-*/
-
-sac_de_lettres::~sac_de_lettres(){
-	delete tableau_lettres;
+	tableau_lettres.push_back({'A', 9, 3}); //A
+	tableau_lettres.push_back({'B', 2, 3}); //B
+	tableau_lettres.push_back({'C', 2, 3}); //C
+	tableau_lettres.push_back({'D', 3, 2}); //D
+	tableau_lettres.push_back({'E', 15,1}); //E
+	tableau_lettres.push_back({'F', 2, 4}); //F
+	tableau_lettres.push_back({'G', 2, 2}); //G
+	tableau_lettres.push_back({'H', 2, 4}); //H
+	tableau_lettres.push_back({'I', 8, 1}); //I
+	tableau_lettres.push_back({'J', 1, 8}); //J
+	tableau_lettres.push_back({'K', 1, 10});//K
+	tableau_lettres.push_back({'L', 5, 1}); //L
+	tableau_lettres.push_back({'M', 3, 2}); //M
+	tableau_lettres.push_back({'N', 6, 1}); //N
+	tableau_lettres.push_back({'O', 6, 1}); //O
+	tableau_lettres.push_back({'P', 2, 3}); //P
+	tableau_lettres.push_back({'Q', 3, 8}); //Q
+	tableau_lettres.push_back({'R', 6, 1}); //R
+	tableau_lettres.push_back({'S', 6, 1}); //S
+	tableau_lettres.push_back({'T', 6, 1}); //T
+	tableau_lettres.push_back({'U', 6, 1}); //U
+	tableau_lettres.push_back({'V', 2, 4}); //V
+	tableau_lettres.push_back({'W', 1, 10});//W
+	tableau_lettres.push_back({'X', 1, 10});//X
+	tableau_lettres.push_back({'Y', 1, 10});//Y
+	tableau_lettres.push_back({'Z', 1, 10});//Z
 }
 
 
-int sac_de_lettres::piocher_lettre(){
-	int nb_lettres_restantes = nb_lettres;
-	cout << "La probabilité de piocher une lettre est proportionnelle au nbr 
-			d'exemplaires restant dans le sac : " << nb_lettres_restantes << end;
+string sac_de_lettres::piocher_lettre(int nb){
+	//cout<<"La probabilité de piocher une lettre est proportionnelle au nbrd'exemplaires restant dans le sac : "<<nb_lettres<<end;
+	string retour;
 	srand(time(NULL));
+    int n,p,v;
+    for (int i = 0; i < nb; i++)
+    {
+        p=0;
+        v=0;
+        n = rand()%nb_lettres;
+        for(int k=0;i<n;i++){
+            v+=1;
+            if(v==tableau_lettres[p].nb_lettre){
+                v=0;
+                p+=1;
+            }
+        }
+        retour += tableau_lettres[p].lettre;
+        tableau_lettres[p].nb_lettre--;
 
-	while (nb_lettres_joueur < 7) {
-		for (int i = 0; i < 26; i++)
-		{
-			nb_max = 25;
-			nb_min = 0;
-			n = rand()%(nb_max-nb_min+1)+nb_min;
-			char tirage[n];
-
-			tirage[n] = tableau_lettres[i] - 1;
-			nb_lettres_restantes = nb_lettres_restantes - 1;
-		}
-	}
-
+    }
+    return retour;
 }
 
-void sac_de_lettres::points_lettres(i){ //i représente une lettre entre A et Z
-	return tableau_lettres[i];
+int sac_de_lettres::points_lettres(char i){ //i représente une lettre entre A et Z
+    for(auto l : tableau_lettres){
+        if(l.lettre==i)return l.points;
+    }
 	/*
 	tableau_lettres[0] = 1; //A
 	tableau_lettres[1] = 3; //B
